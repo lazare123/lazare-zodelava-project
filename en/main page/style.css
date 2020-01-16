@@ -1,0 +1,225 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+  
+  header {
+    /* border: 1px solid red; */
+    background-color: #455742;
+    box-shadow: #686968 0px 5px 20px;
+    padding: 15px;
+  }
+
+  footer {
+    background-color:#455742 ;
+    /* border: 1px solid red; */
+    padding: 15px;
+    text-align: center;
+    box-shadow: #686968 0px 17px 10px 20px;
+    
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    /* border: 1px solid red; */
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 20%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 70%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+
+/* #menubox{
+  background-color: lightgray;
+  list-style: none;
+  padding: 5px;
+  border: solid 1px lightgray;
+  margin: 3px;
+  box-shadow: #7a7a7a 5px 2px 5px;
+}
+
+#menubox:hover{
+  position: relative;
+  top: -1px;
+}
+
+#menu a {
+  position: relative;
+    display: block;
+    color: black;
+  text-decoration: none
+}
+#menuli {
+  margin: auto;
+  
+} */
+
+
+
+#banner {
+  background-color: blue;
+  border: solid 4px gray;
+  height: 600px;
+  text-align: center;
+  color: white;
+  
+}
+
+#content{
+  text-align: center;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#langiagebox{
+  float: right;
+  margin-top: -50px;
+}
+
+#language {
+  padding: 4px;
+  background-color: transparent;
+  border: 3px solid rgba(202, 4, 4, 0.739);
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: rgba(202, 4, 4, 0.739);
+}
+#language:hover {
+  box-shadow: 0 0 10px 0 rgba(202, 4, 4, 0.739) inset, 0 0 20px 2px rgba(202, 4, 4, 0.739);
+  border: 3px solid rgba(202, 4, 4, 0.739);
+}
+
+
+#menubox {
+  list-style: none;
+  padding-top:2px ;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  margin: 2px;
+  background-color: transparent;
+  border: 3px solid rgba(202, 4, 4, 0.739);
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: rgba(202, 4, 4, 0.739);
+}
+#menubox:hover {
+  box-shadow: 0 0 10px 0 rgba(202, 4, 4, 0.739) inset, 0 0 20px 2px rgba(202, 4, 4, 0.739);
+  border: 3px solid rgba(202, 4, 4, 0.739);
+}
+
+#menu a {
+  position: relative;
+    display: block;
+    color: black;
+  text-decoration: none
+}
